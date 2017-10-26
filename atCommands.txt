@@ -1,0 +1,21 @@
+ATD19403890849 - Calls Casey
+ATH - Hangs up
+ATA - Answers incoming call
+ATS0=1 - Automatically answers the phone on the first ring
+
+AT+CNUM - Gets phone number of device
+
+AT+CPBS=? - Lists the phonebooks that the phone contains
+AT+CPBS="ME" - Gets phone numbers from internal phonebook
+AT+CPBR=1 - Gets the first entry in the phonebook
+AT+CPBW=,"1##########",129,"Name" - Write phonebook entry at next available spot
+
+AT+CPMS=? - Lists where text messages can be stored
+AT+CPMS="ME" - Retrieves messages from internal phone
+
++CPMS: 6, 850, 0, 30, 0, 30
++CPMS: used_space1,max_space1,used_space2,max_space2,used_space3,max_space3
+
+AT+CMGL="ALL" - Gets all text messages
+
+AT+CPAS - Activity status of phone
